@@ -1,0 +1,82 @@
+html
+{
+	scroll-behavior: smooth;
+}
+
+body
+{
+	margin:0;
+	background-color: white;
+}
+
+#topLogo
+{
+	
+	background-color: #ed1b2e;
+
+}
+
+#topLogo>p>a>img
+{
+	
+	height: 5vh;
+}
+
+#topLogo>p
+{
+	margin:0;
+	text-align: center;
+}
+
+
+#sideNav {
+	padding: 10px;
+	position: fixed;
+  	width: 150px;
+  	z-index: 1;
+ 	top: 40px;
+  	left: 10px;
+  	background-color: #FCF5F5;
+  	overflow-x: hidden;
+}
+
+#sideNav>a {
+	 padding: 10px;
+	 text-decoration: none;
+	 font-size: 30px;
+	 color: #F94848;
+	 display: block;
+	 font-family: Arial;
+}
+
+#sideNav>a:hover
+{
+	color: #FFA0A0;
+}
+
+
+
+
+
+form
+{
+	width: 70%;
+	height: 100vh;
+	position: relative;
+	top:10vh;
+	left:280px;
+	font-family: verdana;
+}
+
+input
+{
+	width: 100%;
+	align-items: right;
+}
+
+legend
+{
+	color:#E43F3F;
+}
+
+

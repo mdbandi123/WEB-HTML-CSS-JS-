@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<!--Quicho, Brian/Sumang, Michael Dave(WD-202)-->
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="site4CSS.css">
+	<link rel="icon" href="img/logoHead.png">
+	<title>Order Form</title>
+</head>
+
+<body>
+	<header id = "topLogo">
+		<p>
+		<a href="mainPage.html"><img src="img/textLogoW.png"></a>
+		</p>	
+	</header>
+
+	<div id = "sideNav">
+		<a href="mainPage.html#topLogo">Home</a>
+	  	<a href="aboutPage.html#topLogo">About Us</a>
+	  	<a href="menuPage.html#topLogo">Menu</a>
+	</div>
+
+	<div id = "orderer">
+		<form id = "survey" action="" method="" enctype="" onsubmit="total()">
+			<!--Action usually uses .php parts; method has get and post(for secured) methods-->
+
+			<fieldset id = "customer_info">
+				<legend style="font-size: 40px;">Customer Information</legend>
+
+				<label for = "name">Name*</label> <input name="CustName" id = "name" type="text" placeholder="Lastname, Firstname, Middle Initial">
+
+				<br>
+				<br>
+
+				<label for = "street">Street Address*</label> <input name="CustStreet" id = "street" type="text">
+
+				<br>
+				<br>
+
+				<label for = "city">City*</label> <input name="CustCity" id = "city" type="text">
+
+				<br>
+				<br>
+
+				<label for = "state">Province*</label> <input name="CustState" id = "state" type="text">
+
+				<br>
+				<br>
+
+				<label for = "phone">Phone Number*</label> <input name="custPhone" id = "phone" type="tel">
+
+				<br>
+				<br>
+
+				<label for = "mail">Email*</label> <input name="custEmail" id = "mail" type="email" >
+			</fieldset>
+
+
+				<br>
+
+			<fieldset id = "order_info">
+				<legend style="font-size: 40px;">Order Form</legend>
+				<!-- Start-->
+				<p style="font-family: Verdana; font-size: 13px;"><em>*All orders above 50 pieces per item should be placed through in store booking or through the phone hotline</em></p>
+				<fieldset id = "breakfast">
+					<legend style="font-size: 20px;">Breakfast</legend>
+				
+
+				<div>
+					<label for ="pancake">Pancake (₱45.00)</label>
+					<input type="range" name="panRange" id="pancake" value = "0" step="1" min="0" max="50">
+					<p>Quantity: <span id="panQuan"></span></p>
+					<script>
+						var sliderOne = document.getElementById("pancake");
+						var outputOne= document.getElementById("panQuan");
+						outputOne.innerHTML = sliderOne.value;
+
+						sliderOne.oninput = function() 
+						{
+						  outputOne.innerHTML = this.value;
+						}
+					</script>
+				</div>
+
+				<div>
+					<label for ="bs">Breakfast Sandwhich (₱65.00)</label>
+					<input type="range" name="bsRange" id="bs" value = "0" step="1" min="0" max="50">
+					<p>Quantity: <span id="bsQuan"></span></p>
+					<script>
+						var sliderTwo = document.getElementById("bs");
+						var outputTwo = document.getElementById("bsQuan");
+						outputTwo.innerHTML = sliderTwo.value;
+		
+						sliderTwo.oninput = function() 
+						{
+						  outputTwo.innerHTML = this.value;
+						}
+
+					</script>
+				</div>
+
+				<div>
+					<label for ="bsr">Breakfast Sausage Rice Meal (₱85.00)</label>
+					<input type="range" name="bsrRange" id="bsr" value = "0" step="1" min="0" max="50">
+					<p>Quantity: <span id="bsrQuan"></span></p>
+					<script>
+						var sliderThree = document.getElementById("bsr");
+						var outputThree = document.getElementById("bsrQuan");
+						outputThree.innerHTML = sliderThree.value;
+		
+						sliderThree.oninput = function() 
+						{
+						  outputThree.innerHTML = this.value;
+						}
+
+					</script>
+				</div>
+					
+				</fieldset>	
+
+					<br>
+
+				<fieldset id = "atf">
+					<legend style="font-size: 20px;">All Time Favorites</legend>
+					
+
+					<div>
+						<label for ="joy">Chickenjoy (₱129.00)</label>
+						<input type="range" name="joyRange" id="joy" value = "0" step="1" min="0" max="50">
+						<p>Quantity: <span id="joyQuan"></span></p>
+						<script>
+							var sliderFour = document.getElementById("joy");
+							var outputFour= document.getElementById("joyQuan");
+							outputFour.innerHTML = sliderFour.value;
+
+							sliderFour.oninput = function() 
+							{
+							  outputFour.innerHTML = this.value;
+							}
+						</script>
+					</div>
+
+					<div>
+						<label for ="spag">Jolly Spaghetti (₱89.00)</label>
+						<input type="range" name="spagRange" id="spag" value = "0" step="1" min="0" max="50">
+						<p>Quantity: <span id="spagQuan"></span></p>
+						<script>
+							var sliderFive = document.getElementById("spag");
+							var outputFive = document.getElementById("spagQuan");
+							outputFive.innerHTML = sliderFive.value;
+			
+							sliderFive.oninput = function() 
+							{
+							  outputFive.innerHTML = this.value;
+							}
+
+						</script>
+					</div>
+
+					<div>
+						<label for ="steak">Burger Steak (₱99.00)</label>
+						<input type="range" name="steakRange" id="steak" value = "0" step="1" min="0" max="50">
+						<p>Quantity: <span id="steakQuan"></span></p>
+						<script>
+							var sliderSix = document.getElementById("steak");
+							var outputSix = document.getElementById("steakQuan");
+							outputSix.innerHTML = sliderSix.value;
+			
+							sliderSix.oninput = function() 
+							{
+							  outputSix.innerHTML = this.value;
+							}
+
+						</script>
+					</div>
+				</fieldset>
+
+				<br> 
+
+				<fieldset id = "drinks">
+					<legend style="font-size: 20px;">Drinks</legend>
+					
+
+					<div>
+						<label for ="float">Float (₱49.00)</label>
+						<input type="range" name="floatRange" id="float" value = "0" step="1" min="0" max="50">
+						<p>Quantity: <span id="floatQuan"></span></p>
+						<script>
+							var sliderSeven = document.getElementById("float");
+							var outputSeven= document.getElementById("floatQuan");
+							outputSeven.innerHTML = sliderSeven.value;
+
+							sliderSeven.oninput = function() 
+							{
+							  outputSeven.innerHTML = this.value;
+							}
+						</script>
+					</div>
+
+					<div>
+						<label for ="cof">Coffee (₱30.00)</label>
+						<input type="range" name="cofRange" id="cof" value = "0" step="1" min="0" max="50">
+						<p>Quantity: <span id="cofQuan"></span></p>
+						<script>
+							var sliderEight = document.getElementById("cof");
+							var outputEight = document.getElementById("cofQuan");
+							outputEight.innerHTML = sliderEight.value;
+			
+							sliderEight.oninput = function() 
+							{
+							  outputEight.innerHTML = this.value;
+							}
+
+						</script>
+					</div>
+
+					<div>
+						<label for ="milk">Milk Tea (₱65.00)</label>
+						<input type="range" name="milkRange" id="milk" value = "0" step="1" min="0" max="50">
+						<p>Quantity: <span id="milkQuan"></span></p>
+						<script>
+							var sliderNine = document.getElementById("milk");
+							var outputNine = document.getElementById("milkQuan");
+							outputNine.innerHTML = sliderNine.value;
+			
+							sliderNine.oninput = function() 
+							{
+							  outputNine.innerHTML = this.value;
+							}
+
+						</script>
+					</div>
+				</fieldset>
+
+				<br>
+
+				<fieldset id = "snacks">
+					<legend style="font-size: 20px;">Snacks</legend>
+					
+
+					<div>
+						<label for ="yum">Yumburger (₱30.00)</label>
+						<input type="range" name="yumRange" id="yum" value = "0" step="1" min="0" max="50">
+						<p>Quantity: <span id="yumQuan"></span></p>
+						<script>
+							var sliderTen = document.getElementById("yum");
+							var outputTen= document.getElementById("yumQuan");
+							outputTen.innerHTML = sliderTen.value;
+
+							sliderTen.oninput = function() 
+							{
+							  outputTen.innerHTML = this.value;
+							}
+						</script>
+					</div>
+
+					<div>
+						<label for ="fries">Fries (₱39.00)</label>
+						<input type="range" name="friesRange" id="fries" value = "0" step="1" min="0" max="50">
+						<p>Quantity: <span id="friesQuan"></span></p>
+						<script>
+							var sliderEleven = document.getElementById("fries");
+							var outputEleven = document.getElementById("friesQuan");
+							outputEleven.innerHTML = sliderEleven.value;
+			
+							sliderEleven.oninput = function() 
+							{
+							  outputEleven.innerHTML = this.value;
+							}
+
+						</script>
+					</div>
+
+					<div>
+						<label for ="dog">Jolly Hotdog (₱35.00)</label>
+						<input type="range" name="dogRange" id="dog" value = "0" step="1" min="0" max="50">
+						<p>Quantity: <span id="dogQuan"></span></p>
+						<script>
+							var sliderTwelve = document.getElementById("dog");
+							var outputTwelve = document.getElementById("dogQuan");
+							outputTwelve.innerHTML = sliderTwelve.value;
+			
+							sliderTwelve.oninput = function() 
+							{
+							  outputTwelve.innerHTML = this.value;
+							}
+
+						</script>
+					</div>
+				</fieldset>
+
+				<br>
+
+
+				<fieldset id = "desserts">
+					<legend style="font-size: 20px;">Desserts</legend>
+					
+
+					<div>
+						<label for ="pie">Peach Mango Pie (₱29.00)</label>
+						<input type="range" name="pieRange" id="pie" value = "0" step="1" min="0" max="50">
+						<p>Quantity: <span id="pieQuan"></span></p>
+						<script>
+							var sliderThirteen = document.getElementById("pie");
+							var outputThirteen= document.getElementById("pieQuan");
+							outputThirteen.innerHTML = sliderTen.value;
+
+							sliderThirteen.oninput = function() 
+							{
+							  outputThirteen.innerHTML = this.value;
+							}
+						</script>
+					</div>
+
+					<div>
+						<label for ="halo">Halo-halo (₱35.00)</label>
+						<input type="range" name="haloRange" id="halo" value = "0" step="1" min="0" max="50">
+						<p>Quantity: <span id="haloQuan"></span></p>
+						<script>
+							var sliderFourteen = document.getElementById("halo");
+							var outputFourteen = document.getElementById("haloQuan");
+							outputFourteen.innerHTML = sliderFourteen.value;
+			
+							sliderFourteen.oninput = function() 
+							{
+							  outputFourteen.innerHTML = this.value;
+							}
+
+						</script>
+					</div>
+
+					<div>
+						<label for ="sun">Sundae (₱25.00)</label>
+						<input type="range" name="sunRange" id="sun" value = "0" step="1" min="0" max="50">
+						<p>Quantity: <span id="sunQuan"></span></p>
+						<script>
+							var sliderFifteen = document.getElementById("sun");
+							var outputFifteen = document.getElementById("sunQuan");
+							outputFifteen.innerHTML = sliderFifteen.value;
+			
+							sliderFifteen.oninput = function() 
+							{
+							  outputFifteen.innerHTML = this.value;
+							}
+
+						</script>
+					</div>
+					<div>
+						<script>
+							function total()
+							{
+								var bf = (parseInt(sliderOne.value)*45.00)+ (parseInt(sliderTwo.value)*65.00)+ (parseInt(sliderThree.value)*85.00);
+								var atm = (parseInt(sliderFour.value)*129.00)+ (parseInt(sliderFive.value)*89.00)+ (parseInt(sliderSix.value)*99.00);
+								var drnks = (parseInt(sliderSeven.value)*49.00)+ (parseInt(sliderEight.value)*30.00)+ (parseInt(sliderNine.value)*65.00);
+								var sncks = (parseInt(sliderTen.value)*30.00)+ (parseInt(sliderEleven.value)*39.00)+ (parseInt(sliderTwelve.value)*35.00);
+								var dssrts = (parseInt(sliderThirteen.value)*29.00)+ (parseInt(sliderFourteen.value)*35.00)+ (parseInt(sliderFifteen.value)*25.00);
+								var tot = bf + atm + drnks + sncks + dssrts; 
+								confirm("Breakfast: ₱"+bf
+									+"\nAll Time Favorites: ₱"+atm
+									+"\nDrinks: ₱"+drnks
+									+"\nSnacks: ₱"+sncks
+									+"\nDesserts: ₱"+dssrts
+									+"\nTOTAL: ₱"+tot);
+								
+							}
+						</script>
+					</div>
+				</fieldset>
+				<br><br>
+
+				<input type="submit" value="Submit Order" style="height: 20%; font-size: 40px;">
+				<br><br>
+				<input type="Reset" value="Reset" style="height: 10%; font-size: 20px; padding-bottom: 10px; ">
+
+			</fieldset>
+		</form>
+	</div>
+
+
+
+
+
+</body>
+
+</html>
