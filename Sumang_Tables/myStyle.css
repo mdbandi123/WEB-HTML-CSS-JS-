@@ -1,0 +1,91 @@
+#logo_main
+{
+	padding-left:2%;
+	padding-top:1%;
+
+}
+	#logo_main>img
+	{
+		height:40%;
+		width:40%;
+	}
+
+	#logo_main>p
+	{
+		font-family: Verdana;
+		font-size: 100%;
+		letter-spacing: 4px;
+
+		margin:0;
+	}
+
+#side_text
+{
+	padding-right:2%;
+	
+}
+
+	#side_text>span
+	{
+		float:right;
+		clear:right;
+
+
+
+		font-family: Verdana;
+		font-size:100%;
+	}
+
+.Main_Table
+{
+	clear:right;
+	margin:2%;
+	font-family:Verdana;
+}
+	table
+	{
+		border: 1px solid;
+		border-collapse: collapse;
+		width:100%;
+		
+		
+	}
+
+	td
+	{
+		border: 1px solid;
+		padding:2px;
+		border-color: red;
+	}
+
+	th
+	{
+		border: 1px solid;
+		padding:2px;
+		border-color: grey;
+	}
+
+	#row_one
+	{
+		background: #56ceb8;
+		color: white;
+	}
+
+	#row_two
+	{
+		background: #56ceb8;
+		color: white;
+	}
+
+.Bottom_Table
+{
+	margin:2%;
+	font-family:Verdana;
+	background-color: #56ceb8 ;
+	color:white;
+}
+
+	.Bottom_Table>table
+	{
+		text-align:center;
+	}

@@ -1,0 +1,139 @@
+.main
+{
+	background-color: #2a2d33;
+}
+
+#title-bar
+{
+	background-color: #ffa736;
+	position:relative;
+
+
+}
+
+	#title-bar>img
+
+	{
+		height:10%;
+		width:10%;
+		padding:2.5%;
+	}
+
+#title-name>h1
+{
+	position: absolute;
+	top:9%;
+	left:15%;
+
+	font-size:5vw;
+	font-family: "Trebuchet MS";
+	color:#FFFFFF;	
+}
+
+
+#menu-logo
+{
+	position: absolute;
+	top:10%;
+	left:85%;
+
+}
+
+	#menu-logo>img
+	{
+		height:7vw;
+		width:7vw;
+		padding:2.5vw;
+
+	}
+
+#sticky-bar
+{
+	position: -webkit-sticky;
+  	position: sticky;
+  	top:0%;
+	padding:1%;
+	background-color: #ffcb88;
+}
+
+#sticky-bar>p
+{
+	font-family:Arial;
+	color:#232222;
+	font-weight: bold;
+	font-size:1.5vw;
+
+}
+
+
+#History>h1
+{
+	font-family:Helvetica;
+	color:#FFFFFF;
+	margin:5%;
+	font-size:300%;
+	padding-top:2%;
+}
+
+	#hau-one>img
+	{
+		padding:5%;
+		float:right;
+		clear:right;
+		height:45%;
+		width:45%;
+	}
+
+	#para-one
+	{
+		color:#FFFFFF;
+		margin:7%;
+		font-family:Helvetica;
+		font-size:150%;
+	}
+
+	#hau-two>img
+	{
+		padding:5%;
+		float:left;
+		clear:left;
+		height:40%;
+		width:40%;
+	}
+
+	#para-two
+	{
+		color:#FFFFFF;
+		margin:7%;
+		font-family:Helvetica;
+		font-size:150%;
+	}
+
+	#hau-three>img
+	{
+		padding:5%;
+		float:left;
+		clear:left;
+		height:50%;
+		width:50%;
+	}
+
+	#para-three
+	{
+		color:#FFFFFF;
+		margin:7%;
+		font-family:Helvetica;
+		font-size:150%;
+	}
+
+#reference
+{
+	background-color: #fbb842;
+	margin-top: 10%
+	margin bottom: 3%;
+	padding:3%;
+	font-family:Helvetica;
+	font-size:100%;
+}
+	
+	
